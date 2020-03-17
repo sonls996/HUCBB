@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đại Học văn Hóa Hà Nội</title>
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="SASS/hanu.css">
+<script src="https://kit.fontawesome.com/f1bce2ab63.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Search start------------------------------------------>
+    <div class="header-top">
+        <div class="btn-select">
+            <a href="#">Đăng ký</a>
+            <a href="#">Đăng nhập</a>
+            <a href="#">Ngôn ngữ</a>
+            <select>
+                <option value="">Việt Nam</option>
+                <option value="">English</option>
+            </select>
+        </div>
+        <div class="search">
+            <div class="search-input">
+                <input onclick="clearValue()"  id="returnvalue" type="text" value="You can search anything you want here ....">
+            </div>
+            <div class="search-icon" onclick="removeValue()">
+                <span>Search</span>
+            </div>
+        </div>   
+    </div>
+    <!-- Search end------------------------------------------>
+
+    <!--banner start---------------------------------------------------->
+    <!-- <div class="banner">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            Indicators
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+            
+            The slideshow
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/baner1.jpg" alt="Los Angeles" width="1280px" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="images/bennerweb7.jpg" alt="Chicago" width="1280px" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="images/banner3.jpg" alt="New York" width="1280px" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="images/banner5.jpg" alt="New York" width="1280px" height="500">
+              </div>
+            </div>
+            
+            Left and right controls
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+    </div> -->
+<!--banner end---------------------------------------------------------------->
+
+
+<div class="syntax">
+    <div id="textid" onclick="tonglevideo()">
+        <h1>Đại học văn hóa hà nội</h1>
+    </div>
+    <video id="videoBG" poster="poster.JPG" autoplay muted   loop src="./images/introdaihocvanhoa.mp4">
+    </video>
+</div>
+
+
+
+
+
+<!--marquee start------------------------------------------------------------->
+<div  class="marquee">
+    <marquee  direction="left"  > <i class="fas fa-ambulance"></i><a onclick="addNew()" href=""> Hiện nay tình hình dịch bệnh đang hết sức căng thằng, mọi người hãy cố gắng giữ gìn sức khỏe, hạn chế tụ tập chỗ đông người</a> </marquee>
+</div>
+<!--marquee end--------------------------------------------------------------->
+
+<!--navigation start---------------------------------------------------------->
+ 
+<div class="nav-wrap">
+    <div class="nav-wrap-list pc">
+        <li class="menu"><a href="">Trang chủ</a></li>
+        <li class="menu">
+            <a href="">Tin tức</a>
+            <ul class="sub-menu">
+                <li>
+                    <a href="#">Tin nóng trong ngày</a>
+                    <ul class="sub-menu-sub">
+                        <li><a href="#">Thông tin về chương trình học</a></li>
+                        <li><a href="#">Các sự kiện nổi bật trong tuần</a></li>
+                        <li><a href="#">Thông tin tuyển dụng</a></li>
+                        <li><a href="#">Chương trình du học</a></li>
+                        <li><a href="#">Tổng hợp </a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mục điểm tin của tuần</a></li>
+                <li><a href="#">Các hoạt động của trường</a></li>
+                <li><a href="#">Hội các câu lạc bộ</a></li>
+            </ul>
+        </li>
+        <li class="menu"><a href="">Điểm nhấn</a></li>
+        <li class="menu"><a href="">Thông báo</a></li>
+        <li class="menu"><a href="">Tuyển sinh</a></li>
+        <li class="menu">
+            <a href="">Đào tạo</a>
+            <ul class="sub-menu">
+                <li>
+                    <a href="#">Đại học chính quy</a>
+                    <ul class="sub-menu-sub">
+                        <li><a href="#">Thông báo</a></li>
+                        <li><a href="#">Chương trình đào tạo</a></li>
+                        <li><a href="#">Quy chế, Quy định</a></li>
+                        <li><a href="#">Hệ liên thông</a></li>
+                        <li><a href="#">Biểu mẫu</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Vừa học vừa làm</a></li>
+                <li><a href="#">Sau đại học</a></li>
+            </ul>
+        </li>
+        <li class="menu">
+            <a href="">Nghiên cứu khoa học</a>
+            <ul class="sub-menu">
+                <li><a href="#">Đề tài đang triển khai</a></li>
+                <li>
+                    <a href="#">Lý lịch khóa học</a>
+                    <ul class="sub-menu-sub">
+                        <li><a href="#">Ban Giám hiệu</a></li>
+                        <li><a href="#">Khoa Văn hóa học</a></li>
+                        <li><a href="#">Khoa Di sản Văn hóa</a></li>
+                        <li><a href="#">Khoa Xuất bản, Phát hành</a></li>
+                        <li><a href="#">Khoa Văn hóa dân tộc thiểu số</a></li>
+                        <li><a href="#">Khoa Quản lí văn hóa, nghệ thuật</a></li>
+                        <li><a href="#">Khoa Thông tin, Thư viện</a></li>
+                        <li><a href="#">Khoa Du lịch</a></li>
+                        <li><a href="#">Khoa Viết văn và Báo chí</a></li>
+                        <li><a href="#">Khoa Ngôn ngữ và văn hóa quốc tế</a></li>
+                        <li><a href="#">Khoa Gia đình và công tác xã hội</a></li>
+                        <li><a href="#">Khoa Luật</a></li>
+                        <li><a href="#">Khoa cơ bản</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Giới thiệu chung</a></li>
+                <li><a href="#">Tạp chí nghiên cứu văn hóa</a></li>
+                <li><a href="#">Nghiên cứu khoa học</a></li>
+            </ul>
+        </li>
+        <li class="menu"><a href="">Hợp tác quốc tế</a></li>
+        <li class="menu"><a href="">Sinh viên</a></li>
+        <li class="menu">
+            <a href="">Khoa học</a>
+            <!-- <ul class="sub-menu">
+                <li>
+                    <a href="#">Đại học chính quy</a>
+                    <ul class="sub-menu-sub">
+                        <li><a href="#">Thông báo</a></li>
+                        <li><a href="#">Chương trình đào tạo</a></li>
+                        <li><a href="#">Quy chế, Quy định</a></li>
+                        <li><a href="#">Hệ liên thông</a></li>
+                        <li><a href="#">Biểu mẫu</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Vừa học vừa làm</a></li>
+                <li><a href="#">Sau đại học</a></li>
+            </ul> -->
+        </li>
+    </div>
+
+    <!--nav-laptop-->
+    <div class=" laptop" >
+        <div class="laptop-icon openbtn" onclick="openNav()">
+            <i class="fas fa-bars"></i> 
+        </div>
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <li class="laptop-menu" ><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+        <li class="laptop-menu" ><a href="#">Trang chủ</a></li>
+        <li class="laptop-menu" ><a href="#">Tin tức</a></li>
+        <li class="laptop-menu" ><a href="#">Điểm nhấn</a></li>
+        <li class="laptop-menu" ><a href="#">Thông báo</a></li>
+        <li class="laptop-menu" ><a href="#">Tuyển sinh</a></li>
+        <li class="laptop-menu" ><a href="#">Đào tạo</a></li>
+        <li class="laptop-menu">
+            <a href="#">Nghiên cứu khoa học</a>
+            <ul class="laptop-sub-menu">
+                <li><a href="#">Đề tài đang triển khai</a></li>
+                <li class="laptop-menu-2">
+                    <a href="#">Lý lịch khoa học</a>
+                    <ul class="laptop-sub-menu-2 >
+                        <li id="cabiet"><a href="#">Ban Giám hiệu</a></li>
+                        <li><a href="#">Khoa Văn hóa học</a></li>
+                        <li><a href="#">Khoa Di sản Văn hóa</a></li>
+                        <li><a href="#">Khoa Xuất bản, Phát hành</a></li>
+                        <li><a href="#">Khoa Văn hóa dân tộc thiểu số</a></li>
+                        <li><a href="#">Khoa Quản lí văn hóa, nghệ thuật</a></li>
+                        <li><a href="#">Khoa Thông tin, Thư viện</a></li>
+                        <li><a href="#">Khoa Du lịch</a></li>
+                        <li><a href="#">Khoa Viết văn và Báo chí</a></li>
+                        <li><a href="#">Khoa Ngôn ngữ và văn hóa quốc tế</a></li>
+                        <li><a href="#">Khoa Gia đình và công tác xã hội</a></li>
+                        <li><a href="#">Khoa Luật</a></li>
+                        <li><a href="#">Khoa cơ bản</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Giới thiệu chung</a></li>
+                <li><a href="#">Tạp chí nghiên cứu văn hóa</a></li>
+                <li><a href="#">Công bố  khoa học</a></li>
+            </ul>
+        </li>
+        <li class="laptop-menu"><a href="#">Hợp tác quốc tế</a></li>
+        <li class="laptop-menu"><a href="#">Sinh viên</a></li>
+        <li class="laptop-menu"><a href="#">Liên hệ</a></li>
+      </div>
+</div>
+<!--navigation end------------------------------------------------------------>
+
+
+<div class="content">
+    <div  id="jquery-accordion-menu" class="jquery-accordion-menu">
+        <div class="jquery-accordion-menu-header">
+        <!-- <img style="object-fit: cover; margin-right: 40px; width: 50px; height: 50px; border-radius: 50%;" src="./images/logoo.jpg" alt=""> -->
+
+        <i style="font-size: 26px; margin-right: 20px;" class="fas fa-home"></i> Đại học văn hóa hà nội
+         </div>
+        <ul>
+            <li class="active"><a href="#"><i class="fa fa-home"></i>Trang chủ </a></li>
+            <li><a href="#"><i class="fa fa-glass"></i>Tin tức </a></li>
+            <li><a href="#"><i class="fa fa-file-image-o"></i>Điểm nhấn </a><span class="jquery-accordion-menu-label">12 </span></li>
+            <li><a href="#"><i class="fa fa-cog"></i>Thông báo </a>
+                <ul class="submenu">
+                    <li><a href="#">
+                    Web Design </a></li>
+                    <li><a href="#">Hosting </a></li>
+                    <li><a href="#">Design </a>
+                        <ul class="submenu">
+                            <li><a href="#">Graphics </a></li>
+                            <li><a href="#">Vectors </a></li>
+                            <li><a href="#">Photoshop </a></li>
+                            <li><a href="#">Fonts </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Consulting </a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-newspaper-o"></i>Tuyển sinh </a></li>
+            <li><a href="#"><i class="fa fa-suitcase"></i>Đào tạo </a>
+                <ul class="submenu">
+                    <li><a href="#">Đại học chính quy </a></li>
+                    <li><a href="#">Sau đại học </a><span class="jquery-accordion-menu-label">10 </span></li>
+                    <li><a href="#">Vừa học vừa làm </a></li>
+                    <li><a href="#">Hệ liên thông </a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-user"></i>Nghiên cứu khoa học </a></li>
+            <li><a href="#"><i class="fas fa-user-nurse"></i>Hợp tác quốc tế </a></li>
+            <li><a href="#"><i class="fas fa-universal-access"></i></i>Sinh viên </a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i>Liên hệ </a></li>
+        </ul>
+        <!-- <div class="jquery-accordion-menu-footer">Footer </div> -->
+    </div>
+</div>
+
+<!--main content start-------------------------------------------------------->
+<div class="main-contain">
+    <div class="main-contain-content col-9">
+        <div class="news-row">
+            <div class="news-row-title">
+                <a> THÔNG BÁO</a>
+            </div>
+            <div class="container cta-100 ">
+                <div class="container">
+                <div class="row blog">
+                    <div class="col-md-12">
+                    <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
+                        <!-- <ol class="carousel-indicators">
+                        <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#blogCarousel" data-slide-to="1"></li>
+                        </ol> -->
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                            <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="images/new5.jpg"> </figure>
+                                </div>
+                                <div class="item-box-blog-body">
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                    <a href="#" tabindex="0">
+                                        <h5>Tin mới</h5>
+                                    </a>
+                                    </div>
+                                    <!--Data-->
+                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                    <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                                    </div>
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                    <p>Giao lưu văn hóa “Bắc Kinh - ASEAN: Hành trình văn hóa 2017” tại Đại học Văn hóa Hà Nội.</p>
+                                    </div>
+                                    <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Xem thêm ...</a> </div>
+                                    <!--Read More Button-->
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
+                                    <!--Image-->
+                                    <figure> <img style="object-fit: cover;" alt="" src="images/new3.jpg"> </figure>
+                                </div>
+                                <div class="item-box-blog-body">
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                    <a href="#" tabindex="0">
+                                        <h5>Tin mới</h5>
+                                    </a>
+                                    </div>
+                                    <!--Data-->
+                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                    <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                                    </div>
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                    <p>Lễ ký kết phụ lục biên bản ghi nhớ hợp tác đào tạo và nghiên cứu khoa học năm 2018 - 2019 với Trường Đại học Zielona Gora, Ba Lan.</p>
+                                    </div>
+                                    <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Xem thêm ...</a> </div>
+                                    <!--Read More Button-->
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="images/new4.jpg"> </figure>
+                                </div>
+                                <div class="item-box-blog-body">
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                    <a href="#" tabindex="0">
+                                        <h5>Tin mới</h5>
+                                    </a>
+                                    </div>
+                                    <!--Data-->
+                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                    <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                                    </div>
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                    <p> Trường Đại học Văn hóa Hà Nội vừa tổ chức thành công Hội nghị Cán bộ, viên chức năm học 2019 – 2020 vào sáng ngày 13/9/2019.</p>
+                                    </div>
+                                    <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Xem thêm ...</a> </div>
+                                    <!--Read More Button-->
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+                        <div class="carousel-item ">
+                            <div class="row">
+                            <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="images/new6.jpg"> </figure>
+                                </div>
+                                <div class="item-box-blog-body">
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                    <a href="#" tabindex="0">
+                                        <h5>Tin mới</h5>
+                                    </a>
+                                    </div>
+                                    <!--Data-->
+                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                    <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                                    </div>
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                    <p>Nói chuyện chuyên đề của chuyên gia Katarzyna Kwiecień-Długosz Đại học Zielona Góra - Ba Lan.</p>
+                                    </div>
+                                    <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Xem thêm ...</a> </div>
+                                    <!--Read More Button-->
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="images/new7.png"> </figure>
+                                </div>
+                                <div class="item-box-blog-body">
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                    <a href="#" tabindex="0">
+                                        <h5>Tin mới</h5>
+                                    </a>
+                                    </div>
+                                    <!--Data-->
+                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                    <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                                    </div>
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                    <p>Những đề đạt mới và quan trọng trong đào tạo tài năng Sáng tác văn học.</p>
+                                    </div>
+                                    <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Xem thêm ...</a> </div>
+                                    <!--Read More Button-->
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="images/new8.png"> </figure>
+                                </div>
+                                <div class="item-box-blog-body">
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                    <a href="#" tabindex="0">
+                                        <h5>Tin mới</h5>
+                                    </a>
+                                    </div>
+                                    <!--Data-->
+                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                    <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                                    </div>
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                    <p>Ngày Nhà giáo Việt Nam 20.11: "Mỗi thầy, cô và sinh viên phải là đại sứ thương hiệu cho trường mình".</p>
+                                    </div>
+                                    <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Xem thêm ...</a> </div>
+                                    <!--Read More Button-->
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                    <!--.Carousel-->
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-row">
+            <div class="news-row-title">
+                <a>TIN TỨC NỔI BẬT</a>
+            </div>
+            <div class="container cta-100 ">
+                <div class="container">
+                <div class="row blog">
+                    <div class="col-md-12">
+                    <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
+                        <!-- <ol class="carousel-indicators">
+                        <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#blogCarousel" data-slide-to="1"></li>
+                        </ol> -->
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                            <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="images/new9.png"> </figure>
+                                </div>
+                                <div class="item-box-blog-body">
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                    <a href="#" tabindex="0">
+                                        <h5>Tin mới</h5>
+                                    </a>
+                                    </div>
+                                    <!--Data-->
+                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                    <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                                    </div>
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                    <p>Trường Đại học Văn hóa Hà Nội đón tân sinh viên K58 nhập học.</p>
+                                    </div>
+                                    <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Xem thêm ...</a> </div>
+                                    <!--Read More Button-->
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="images/new10.jpg"> </figure>
+                                </div>
+                                <div class="item-box-blog-body">
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                    <a href="#" tabindex="0">
+                                        <h5>Tin mới</h5>
+                                    </a>
+                                    </div>
+                                    <!--Data-->
+                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                    <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                                    </div>
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                    <p>Giới thiệu sách về bản đồ tư duy.</p>
+                                    </div>
+                                    <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Xem thêm ...</a> </div>
+                                    <!--Read More Button-->
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="images/new4.jpg"> </figure>
+                                </div>
+                                <div class="item-box-blog-body">
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                    <a href="#" tabindex="0">
+                                        <h5>Tin mới</h5>
+                                    </a>
+                                    </div>
+                                    <!--Data-->
+                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                    <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                                    </div>
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                    <p>Trong khuôn khổ hợp tác quốc tế, trao đổi giảng viên (thuộc Dự án Eramus Plus) giữa ĐH Văn hóa HN và Đại học Zielona Gora. Từ ngày 21/2 đến ngày 23/2/2017, Trường Đại học Văn hóa Hà Nội đã đón chuyên gia Katarzyna Kwiecień-Długosz của Trường Đại học Zielona Gora - Ba Lan tới Trường để nói chuyện chuyên đề trong 3 ngày cho cán bộ, giảng viên và sinh viên Nhà trường..</p>
+                                    </div>
+                                    <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Xem thêm ...</a> </div>
+                                    <!--Read More Button-->
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+                        <div class="carousel-item ">
+                            <div class="row">
+                            <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="images/new5.jpg>" </figure>
+                                </div>
+                                <div class="item-box-blog-body">
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                    <a href="#" tabindex="0">
+                                        <h5>Tin mới</h5>
+                                    </a>
+                                    </div>
+                                    <!--Data-->
+                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                    <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                                    </div>
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                    <p>Giao lưu văn hóa “Bắc Kinh - ASEAN: Hành trình văn hóa 2017” tại Đại học Văn hóa Hà Nội..</p>
+                                    </div>
+                                    <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Xem thêm ...</a> </div>
+                                    <!--Read More Button-->
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="images/new5.jpg"> </figure>
+                                </div>
+                                <div class="item-box-blog-body">
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                    <a href="#" tabindex="0">
+                                        <h5>Tin mới</h5>
+                                    </a>
+                                    </div>
+                                    <!--Data-->
+                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                    <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                                    </div>
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                    <p>Giao lưu văn hóa “Bắc Kinh - ASEAN: Hành trình văn hóa 2017” tại Đại học Văn hóa Hà Nội.</p>
+                                    </div>
+                                    <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Xem thêm ...</a> </div>
+                                    <!--Read More Button-->
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="images/new7.png"> </figure>
+                                </div>
+                                <div class="item-box-blog-body">
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                    <a href="#" tabindex="0">
+                                        <h5>Tin mới</h5>
+                                    </a>
+                                    </div>
+                                    <!--Data-->
+                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                    <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                                    </div>
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                    <p>Cảm xúc trong chuyến học tập thực tế đầy ý nghĩa của thầy, trò Khoa Văn hoá Du lịch</p>
+                                    </div>
+                                    <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">Xem thêm ...</a> </div>
+                                    <!--Read More Button-->
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                    <!--.Carousel-->
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="newinnew-title">
+            <a href="#">Sự kiện nổi bật</a>
+        </div>
+        <div class="newinnew">
+         
+            <div class="newinnew1">
+                <img src="./images/new1.jpg" alt="">
+                <h1>Tin mới</h1>
+                <p>Trường Đại học Văn hóa Hà Nội vừa long trọng tổ chức lễ công bố và trao quyết định bổ nhiệm chức danh Phó Hiệu trưởng đối với PGS.TS. Đặng Hoài Thu vào sáng ngày 16/01/2020.</p>
+                <div class="new-text"><a href="#">Xem thêm ...</a> </div>
+            </div>
+            <div class="newinnew2">
+                <ul>
+                    <li><i class="fas fa-newspaper"></i><a href="#">Trường Đại học Văn hóa Hà Nội vừa tổ chức thành công Hội nghị Cán bộ, viên chức năm học 2019 – 2020 vào sáng ngày 13/9/2019.</a></li>
+                    <li><i class="fas fa-newspaper"></i><a href="#">Trường Đại học Văn hóa Hà Nội vừa long trọng tổ chức lễ công bố và trao quyết định bổ nhiệm chức danh Phó Hiệu trưởng đối với PGS.TS. Đặng Hoài Thu vào sáng ngày 16/01/2020.</a></li>
+                    <li><i class="fas fa-newspaper"></i><a href="#">Những đề đạt mới và quan trọng trong đào tạo tài năng Sáng tác văn học.</a></li>
+                    <li><i class="fas fa-newspaper"></i><a href="#">Trang chủTIN TỨC
+ 
+                        Lễ ký kết phụ lục biên bản ghi nhớ hợp tác đào tạo và nghiên cứu khoa học năm 2018 - 2019 với Trường Đại học Zielona Gora, Ba Lan</a></li>
+                    <li><i class="fas fa-newspaper"></i><a href="#">Khoa Viết văn - Báo chí: Diện mạo mới - thách thức mới.</a></li>
+                    <li><i class="fas fa-newspaper"></i><a href="#">Đại hội Công đoàn Trường Đại học Văn hóa Hà Nội lần thứ XXI, nhiệm kỳ 2017 - 2022.</a></li>
+                    <li><i class="fas fa-newspaper"></i><a href="#">Giao lưu văn hóa “Bắc Kinh - ASEAN: Hành trình văn hóa 2017” tại Đại học Văn hóa Hà Nội..</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="slider93">
+            <div class="slider93-title">
+                <h1>Các chuyên ngành đào tạo</h1>
+            </div>
+            <div class="slider9">
+                <section>
+                    <div id="slider-animation" class="carousel slide" data-ride="carousel">
+                
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#slider-animation" data-slide-to="0" class="active"></li>
+                    <li data-target="#slider-animation" data-slide-to="1"></li>
+                    <li data-target="#slider-animation" data-slide-to="2"></li>
+                    <li data-target="#slider-animation" data-slide-to="3"></li>
+                  </ul>
+                
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://i.pinimg.com/originals/10/1b/bb/101bbb8a4e78d2a5d9589d60e410dac8.jpg" alt="Los Angeles">
+                        <div class="text-box">
+                            <h2 class="wow slideInRight" data-wow-duration="2s">Công nghệ thông tin</h2>
+                            <p class="wow slideInLeft" data-wow-duration="2s">Trường Đại học Văn hóa Hà Nội vừa long trọng tổ chức lễ công bố và trao quyết định bổ nhiệm chức danh Phó Hiệu trưởng đối với PGS.TS. Đặng Hoài Thu vào sáng ngày 16/01/2020. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="https://i.pinimg.com/originals/10/1b/bb/101bbb8a4e78d2a5d9589d60e410dac8.jpg" alt="Los Angeles">
+                          <div class="text-box">
+                              <h2 class="wow slideInRight" data-wow-duration="2s">Công nghệ thông tin</h2>
+                              <p class="wow slideInLeft" data-wow-duration="2s">Trường Đại học Văn hóa Hà Nội vừa long trọng tổ chức lễ công bố và trao quyết định bổ nhiệm chức danh Phó Hiệu trưởng đối với PGS.TS. Đặng Hoài Thu vào sáng ngày 16/01/2020. </p>
+                          </div>
+                      </div>
+                    <div class="carousel-item">
+                      <img src="http://en.ddpai.com/webcommon/images/mix3/animation/bac-2.png" alt="Chicago">
+                    <div class="text-box">
+                            <h2 class="wow slideInUp" data-wow-duration="4s" >Truyền thông và văn hóa</h2>
+                            <p class="wow fadeInDown" data-wow-duration="4s">Nhân dịp xuân Canh Tý 2020 đang đến gần, sáng ngày 16/01/2020, tại Nhà văn hóa, Trường Đại học Văn hóa Hà Nội đã tổ chức buổi gặp mặt cuối năm. Đây là dịp để lãnh đạo đương nhiệm. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://playthunee.com/assets/images/4player-bg.jpg" alt="New York">
+                    <div class="text-box">
+                            <h2 class="wow fadeInUp" data-wow-duration="4s">Quản lý văn hóa nghệ thuật</h2>
+                            <p class="wow fadeInUp" data-wow-duration="2s">Nhân dịp xuân Canh Tý 2020 đang đến gần, sáng ngày 16/01/2020, tại Nhà văn hóa, Trường Đại học Văn hóa Hà Nội đã tổ chức buổi gặp mặt cuối năm. Đây là dịp để lãnh đạo đương nhiệm. </p>
+                        </div>
+                    </div>
+                  </div>
+                
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#slider-animation" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#slider-animation" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                
+                </div>
+                    
+                </section>
+            </div>
+            <div class="slider3"></div>
+        </div>
+
+    </div>
+    
+    <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <div class="main-contain-activity ">
+        <!-- block activity start -------------------------------------------->
+        <div class="main-contain-row">
+            <div class="main-contain-activity-title">
+                <i class="fas fa-user-graduate" style="color:white; font-size: 20px;margin-right: 10px;"></i><span>Dành cho sinh viên</span>
+            </div>
+            <div class="main-contain-activity-list">
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Trang chủ</p>
+                    </div>
+                </div>
+    
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Giới thiệu</p>
+                    </div>
+                </div>
+    
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Bộ sưu tập</p>
+                    </div>
+                </div>
+    
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Cơ cấu tổ chức</p>
+                    </div>
+                </div>
+    
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Ba công khai</p>
+                    </div>
+                </div>
+    
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Lịch tuần</p>
+                    </div>
+                </div>
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Tài nguyên số</p>
+                    </div>
+                </div>
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Tra cứu thư viện</p>
+                    </div>
+                </div>
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Quy định biểu mẫu</p>
+                    </div>
+                </div>
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Hệ thông ISO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- block activity end -------------------------------------------->
+
+        <!-- block activity start -------------------------------------------->
+        <div class="main-contain-row">
+            <div class="main-contain-activity-title">
+                <i class="fas fa-restroom" style="color: white;font-size: 20px;margin-right: 10px;"></i> <span>Dành cho phụ huynh</span>
+            </div>
+            <div class="main-contain-activity-list">
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Tra cứu thông tin sinh viên</p>
+                    </div>
+                </div>
+    
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-search-location"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Tra cứu văn bằng</p>
+                    </div>
+                </div>
+    
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Tra cứu thông tin cố vấn học tập, cán bộ lớp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- block activity end -------------------------------------------->
+
+        <div class="main-contain-row">
+            <div class="main-contain-activity-title">
+                <i style="color: white;font-size: 20px;margin-right: 10px;" class="fas fa-shield-alt"></i> <span>Thống kê truy cập</span>
+            </div>
+            <div class="main-contain-activity-list">
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Đang online : 190</p>
+                    </div>
+                </div>
+    
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Hôm nay : 3000</p>
+                    </div>
+                </div>
+    
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Tổng cộng : 999999</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-contain-row">
+            <div class="main-contain-activity-title">
+                <i style="color: white;font-size: 20px;margin-right: 10px;" class="fab fa-facebook-messenger"></i> <span>Trao đổi thông tin</span>
+            </div>
+            <div class="main-contain-activity-list">
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Mọi thắc mắc hoặc đóng góp về các vấn đề liên quan xin gửi về email <a target="_blank" href="https://mail.google.com/">dhcnhn@haui.edu.vn</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-contain-row">
+            <div class="main-contain-activity-title">
+                <i class="fas fa-user-graduate" style="color:white; font-size: 20px;margin-right: 10px;"></i><span>CHƯƠNG TRÌNH LIÊN THÔNG</span>
+            </div>
+            <div class="main-contain-activity-list">
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Trang chủ</p>
+                    </div>
+                </div>
+    
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Giới thiệu</p>
+                    </div>
+                </div>
+    
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Bộ sưu tập</p>
+                    </div>
+                </div>
+    
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Cơ cấu tổ chức</p>
+                    </div>
+                </div>
+    
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Ba công khai</p>
+                    </div>
+                </div>
+    
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Lịch tuần</p>
+                    </div>
+                </div>
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Tài nguyên số</p>
+                    </div>
+                </div>
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Tra cứu thư viện</p>
+                    </div>
+                </div>
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Quy định biểu mẫu</p>
+                    </div>
+                </div>
+                <div class="main-contain-activity-list__item">
+                    <div class="main-contain-activity-list__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="main-contain-activity-list__item-text">
+                        <p>Hệ thông ISO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
+<!--main content end---------------------------------------------------------->
+<section class="advance">
+    <div class="container">
+    
+        
+            <div class="row mbr-justify-content-center">
+    
+                <div class="col-lg-6 mbr-col-md-10">
+                    <div class="wrap">
+                        <div class="ico-wrap">
+                            <span class="mbr-iconfont fa-volume-up fa"></span>
+                        </div>
+                        <div class="text-wrap vcenter">
+                            <h2 style="color: black;" class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Chương trình <span>tiếng anh</span></h2>
+                            <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mbr-col-md-10">
+                    <div class="wrap">
+                        <div class="ico-wrap">
+                            <span class="mbr-iconfont fa-calendar fa"></span>
+                        </div>
+                        <div class="text-wrap vcenter">
+                            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Chương trình
+                                <span>cử nhân</span>
+                            </h2>
+                            <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mbr-col-md-10">
+                    <div class="wrap">
+                        <div class="ico-wrap">
+                            <span class="mbr-iconfont fa-globe fa"></span>
+                        </div>
+                        <div class="text-wrap vcenter">
+                            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Chương trình
+                                <span>sau đại học</span>
+                            </h2>
+                            <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mbr-col-md-10">
+                    <div class="wrap">
+                        <div class="ico-wrap">
+                            <span class="mbr-iconfont fa-trophy fa"></span>
+                        </div>
+                        <div class="text-wrap vcenter">
+                            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Chương trình <span>tiến sĩ</span></h2>
+                            <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                        </div>
+                    </div>
+                </div>
+    
+                
+    
+                
+            </div>
+    
+    </div>
+    
+    </section>
+<!--partner start------------------------------------------------------------->
+<div class="consultain">
+    <img src="./images/tuvan.jpg" alt="">
+    <div class="consultain-wraptext ">
+        <h1>Hướng nghiệp cho sinh viên</h1>
+        <p>Có rất nhiều hoạt động và dịch vụ hỗ trợ bạn lên kế hoạch và đưa ra các quyết định nghề nghiệp, cũng như tìm được công việc phù hợp sau khi tốt nghiệp. Chuẩn bị cho việc tuyển dụng, Kế hoạch và Quyết định nghề nghiệp, Các Chương trình và Sự kiện Hướng nghiệp.</p>
+        <a href="#">Tìm hiểu thêm</a>
+    </div>
+    <div class=" consultain-mobile">
+        <h1>Hướng nghiệp cho sinh viên</h1>
+        <p>Có rất nhiều hoạt động và dịch vụ hỗ trợ bạn lên kế hoạch và đưa ra các quyết định nghề nghiệp, cũng như tìm được công việc phù hợp sau khi tốt nghiệp. Chuẩn bị cho việc tuyển dụng, Kế hoạch và Quyết định nghề nghiệp, Các Chương trình và Sự kiện Hướng nghiệp.</p>
+        <a href="#">Tìm hiểu thêm</a>
+    </div>
+</div>
+<div class="partner">
+    <div class="container">
+        <h2>Các đối tác liên kết với nhà trường</h2>
+         <section class="customer-logos slider">
+            <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+            <!-- <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div> -->
+            <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+         </section> 
+    </div>
+</div>
+<!--partner end--------------------------------------------------------------->
+
+<div class="nav-wrap-list ">
+    <li class="menu"><a href="">Trang chủ</a></li>
+    <li class="menu">
+        <a href="">Tin tức</a>
+    </li>
+    <li class="menu"><a href="">Điểm nhấn</a></li>
+    <li class="menu"><a href="">Thông báo</a></li>
+    <li class="menu"><a href="">Tuyển sinh</a></li>
+    <li class="menu">
+        <a href="">Đào tạo</a>
+    </li>
+</div>
+<!--Navigation end------------------------------------------------------------>
+
+<!--footer start-------------------------------------------------------------->
+
+<footer>
+    <div class="wrap-content">
+        <div class="wrap-content-column">
+            <div class="wrap-content-column__text">
+                <h1>THÔNG TIN</h1>
+            </div>
+            <div class="wrap-content-column__list">
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-school"></i><p>Trường Đại Học Văn Hóa Hà Nội</p>
+                </div>   
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-map-marker-alt"></i><p>418 Đường La Thành - Quận Đống Đa - Hà Nội - Việt Nam</p>
+                </div>   
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-phone-square-alt"></i><p>(+84) 2438.511.971</p>
+                </div>   
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-fax"></i> <p> (+84) 2435.141.629</p>
+                </div>   
+                <div class="wrap-content-column__list-item">
+                    <i class="far fa-envelope"></i><a href="daihocvanhoahanoi@huc.edu.vn">Email: daihocvanhoahanoi@huc.edu.vn</a>
+                </div> 
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.221039356575!2d105.8205508153322!3d21.023839893321377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab70b95c36c5%3A0x6cc1da673ea579d3!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBWxINuIGjDs2EgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1583836388158!5m2!1svi!2s" width="300px" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>  
+            </div>
+        </div>
+
+        <div class="wrap-content-column">
+            <div class="wrap-content-column__text">
+                <h1>LIÊN KẾT</h1>
+            </div>
+            <div class="wrap-content-column__list">
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-caret-right"></i><a href="">Trường đại học văn hóa Hà Nội</a>
+                </div>   
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-caret-right"></i><a href="">Giới thiệu</a>  
+                </div>  
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-caret-right"></i> <a href="">Thông tin tuyển dụng  </a>
+                </div>    
+                <div class="wrap-content-column__list-item">
+                   <i class="fas fa-caret-right"></i><a href="">Cơ cấu tổ chức</a>
+                </div>   
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-caret-right"></i> <a href="">Ba công khai</a> 
+                </div>   
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-caret-right"></i> <a href="">Lịch tuần</a>
+                </div>   
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-caret-right"></i> <a href="">Tài nguyên số</a>
+                </div>   
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-caret-right"></i> <a href="">Tra cứu thư viện</a>
+                </div>   
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-caret-right"></i> <a href="">Quy định biểu mẫu</a>
+                </div>   
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-caret-right"></i> <a href="">Hệ thống ISO</a>
+                </div>   
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-caret-right"></i> <a href="">Hệ thống ISO</a>
+                </div> 
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-caret-right"></i> <a href="">Hệ thống ISO</a>
+                </div> 
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-caret-right"></i> <a href="">Hệ thống ISO</a>
+                </div> 
+                <div class="wrap-content-column__list-item">
+                    <i class="fas fa-caret-right"></i> <a href="">Hệ thống ISO</a>
+                </div> 
+            </div>
+        </div>
+
+        <div class="wrap-content-column">
+            <div class="wrap-content-column__text">
+                <h1>LIÊN HỆ VỚI CHÚNG TÔI</h1>
+            </div>
+            <form action="">
+                <div class="wrap-content-form">
+                    <div class="wrap-content-form__name col-25">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input  id="name" type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="wrap-content-form__email col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75" >
+                        <input type="text" id="email" placeholder="Your email" required >
+                    </div>
+                    <div class="wrap-content-form__email col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75" >
+                        <input type="text" id="country" placeholder="Your country" required >
+                    </div>
+                    <div class="wrap-content-form__textarea col-25">
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="message" name=""  cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="wrap-content-form__btn">
+                        <input type="submit" value="SEND">
+                    </div>
+                </div>
+            </form>       
+    </div>
+</footer>
+
+<!--footer end---------------------------------------------------------------->
+<!-- social start ------------------------------------------------------------>
+<div class="social">
+    <div class="social-icon col-4">
+        <h1>Follow us</h1>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-youtube"></i></li>
+        <li><i class="fab fa-viber"></i></li>
+    </div>
+    <div class="copyright col-4">
+        <span>© 2020 Copyright: I&E Corp</span>
+    </div>
+    <div class="social-search col-4">
+        <input type="text" placeholder="Search...">
+        <button value="Search"><i class="fas fa-search"></i></button>
+    </div>
+</div>
+<!-- social end--------------------------------------------------------------->
+
+
+<div class="wrap-contact">
+    <div class="wrap-contact-row" onclick="openContact1()">
+        <div style="background-color: green;"  id="open-contact" class="wrap-contact-row__icon" ><i class="fas fa-phone"></i></div>
+        <div id="changeText1" class="wrap-contact-row__text">+84 : 98473263</div>
+    </div>
+    <div class="wrap-contact-row" onclick="openContact2()">
+        <div style="background-color:red;" class="wrap-contact-row__icon"><i class="fab fa-youtube"></i></div>
+        <div id="changeText2" class="wrap-contact-row__text">Youtube : ĐẠI HỌC VĂN HÓA HÀ NỘI</div>
+    </div>
+    <div class="wrap-contact-row" onclick="openContact3()">
+        <div style="background-color: royalblue;" class="wrap-contact-row__icon"><i class="fab fa-facebook"></i></div>
+        <div id="changeText3" class="wrap-contact-row__text">ĐẠI HỌC VĂN HÓA HÀ NỘI</div>
+    </div>
+    <div class="wrap-contact-row" onclick="openContact4()">
+        <div style="background-color: orange;" class="wrap-contact-row__icon"><i class="fab fa-facebook-messenger"></i></div>
+        <div id="changeText4" class="wrap-contact-row__text">FB:MESSAGE//DAIHOCVANHOAHANOI</div>
+    </div>
+</div>
+
+
+<!--  --------- Nhúng CDN Bootstrap 4----------------------------------------->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!--Main js------------------------------------------------------------------->
+<script src="js/hanu.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+</body>
+</html>
